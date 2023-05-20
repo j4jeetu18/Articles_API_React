@@ -1,0 +1,90 @@
+*{
+  font-family: 'Quicksand';
+  font-style: normal;
+}
+
+#root{
+  font-family: inherit;
+  background-color: #f5f5f5;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 1;
+}
+#cardsContainer{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+nav{
+  background-color: white;
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+}
+
+#searchBarSection{
+  display: flex;
+  width: 90vw;
+  padding: 0 1.25vw;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.heading2{
+  font-size: 2em;
+  font-weight: 600;
+  align-self: center;
+}
+
+#logo{
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+}
+
+.card_image {
+  width: 100%;
+  height: 50%;
+  border-radius: 25px 25px 5px 5px;
+}
+
+.cards {
+  text-align: left;
+  min-height: 397px;
+  min-width: 330px;
+  background-color: #ffffff;
+  border-radius: 25px 25px 5px 5px;
+  width: 20vw;
+  margin: 1.25vw 1.25vw;
+}
+
+.cardContent {
+  margin: 1% 4%;
+}
+
+.rightAlignedFooter {
+  text-align: right;
+}
+
+#searchBtn{
+  display: none;
+}
+
+
+@media only screen and (max-width: 700px)  {
+  *{
+    font-size: small;
+  }
+  
+  #searchBarSection{
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 7.3%;
+    margin: 3%;
+  }
+
+}
